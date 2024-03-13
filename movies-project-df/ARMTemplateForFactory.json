@@ -72,9 +72,15 @@
 						"userProperties": [],
 						"typeProperties": {
 							"source": {
-								"type": "AzureSqlSource",
-								"queryTimeout": "02:00:00",
-								"partitionOption": "None"
+								"type": "DelimitedTextSource",
+								"storeSettings": {
+									"type": "AzureBlobStorageReadSettings",
+									"recursive": true,
+									"enablePartitionDiscovery": false
+								},
+								"formatSettings": {
+									"type": "DelimitedTextReadSettings"
+								}
 							},
 							"sink": {
 								"type": "AzureSqlSink",
@@ -171,7 +177,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "CarsTable",
+								"referenceName": "carsCSV",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -191,6 +197,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/carsCSV')]",
 				"[concat(variables('factoryId'), '/datasets/CarsTable')]"
 			]
 		},
