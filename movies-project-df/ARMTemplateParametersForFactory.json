@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "movies-project-df"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"OutputSql_connectionString": {
+			"value": ""
+		},
+		"sqlinputblob_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://moviesdatatutorial.dfs.core.windows.net/"
+		},
+		"SciFiHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/project-ETL-Movies-DATAcsv/main/scifi.csv"
+		},
+		"ThrillerHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/project-ETL-Movies-DATAcsv/main/thriller.csv "
+		},
+		"actionHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/project-ETL-Movies-DATAcsv/main/action.csv "
+		},
+		"adventure_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/project-ETL-Movies-DATAcsv/main/adventure.csv"
+		},
+		"horrorHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/project-ETL-Movies-DATAcsv/main/horror.csv"
+		},
+		"ufoHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/vetate/ufo-data/main/ufo-sightings-transformed.csv "
+		}
+	}
+}
