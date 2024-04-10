@@ -37,78 +37,98 @@
 						"mappings": [
 							{
 								"source": {
-									"name": "Make",
+									"name": "ID",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Make",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"name": "ID",
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							},
 							{
 								"source": {
-									"name": "Model",
+									"name": "song",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Model",
+									"name": "song",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Type",
+									"name": "song_poplarity",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Type",
-									"type": "String",
-									"physicalType": "nvarchar"
+									"name": "song_popularity",
+									"type": "Int32",
+									"physicalType": "int"
 								}
 							},
 							{
 								"source": {
-									"name": "Origin",
+									"name": "artist",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Origin",
+									"name": "artist",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "DriveTrain",
+									"name": "albm",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "DriveTrain",
+									"name": "album",
 									"type": "String",
-									"physicalType": "nvarchar"
+									"physicalType": "varchar"
 								}
 							},
 							{
 								"source": {
-									"name": "Length",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 0,
-									"precision": 18
+									"name": "albm_cover",
+									"type": "String",
+									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Length",
-									"type": "Decimal",
-									"physicalType": "decimal",
-									"scale": 0,
-									"precision": 18
+									"name": "album_cover",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "artist_poplarity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "artist_popularity",
+									"type": "Int32",
+									"physicalType": "int"
+								}
+							},
+							{
+								"source": {
+									"name": "genre",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "genre",
+									"type": "String",
+									"physicalType": "varchar"
 								}
 							}
 						],
